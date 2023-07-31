@@ -1,0 +1,149 @@
+body {
+    background-color: #8e0d42;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    margin-top: 130px;
+}
+
+
+#heading {
+    font-size: 80px;
+    color: white;
+}
+
+.stop-watch {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+#timer {
+    text-align: center;
+}
+
+p {
+    color: white;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    -moz-border-radius: 125px; 
+    border-radius: 125px; 
+    background-color: #8d0a3f;
+    line-height: 250px;
+    animation-name: shine;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shine{
+    0%,100%{
+        box-shadow: 0px 0px 32px -12px white;
+    }
+    50%{
+        box-shadow: 0px 0px 32px 3px white;
+    }
+}
+
+#button-start, #button-reset, #button-stop {
+    background: #590126;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 45px; 
+    margin: 0 20px;
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+#button-start:hover {
+    background-image: linear-gradient(90deg,  #51024a 5%, #039520 49%, #2705bd 80%, #a56c01 100%);
+    animation: slidebg 5s linear infinite;
+ }
+
+#button-stop:hover {
+    background-image: linear-gradient(90deg,  #51024a 5%, #039520 49%, #2705bd 80%, #a56c01 100%);
+    animation: slidebg 5s linear infinite;
+ }
+
+#button-reset:hover {
+    background-image: linear-gradient(90deg, #51024a 5%, #039520 49%, #2705bd 80%, #a56c01 100%);
+    animation: slidebg 5s linear infinite;
+ } 
+
+ @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+
+@media (max-width: 950px) {
+    #heading {
+        font-size: 60px;
+    }
+    body {
+        margin-top: 50px;
+    }
+    .stop-watch {
+        margin-top: 30px;
+    }
+    #button-start, #button-reset, #button-stop {
+        margin-top: 55px;
+    }
+}
+
+  @media (max-width: 800px) {
+    #heading {
+        font-size: 50px;
+
+    }
+    body {
+        margin-top: 20px;
+    }
+    #button-start, #button-reset, #button-stop {
+        font-size: 30px;
+    }
+    p {
+        font-size: 30px;
+        width: 150px;
+        height: 150px;
+        -moz-border-radius: 125px; 
+        border-radius: 125px; 
+        background-color: #7d0837;
+        line-height: 150px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    #heading {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    #button-start, #button-reset, #button-stop {
+        font-size: 25px;
+        margin: 0 10px;
+        margin-top: 70px;
+    }
+    body {
+        margin-top: 115px;
+    }
+    .stop-watch {
+        margin-top: 30px;
+    }
+  }
+
+@media (max-width: 300px) {
+    #heading {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    #button-start, #button-reset, #button-stop {
+        font-size: 18px;
+        margin: 0 5px;
+        margin-top: 40px;
+    }
+    body {
+        margin-top: 100px;
+    }
+}
